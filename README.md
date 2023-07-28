@@ -1,2 +1,2 @@
-# majabukowska.github.io
+# majabukowska.com
 Personal Page
