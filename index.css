@@ -58,16 +58,10 @@ li {
     }
     
     #text {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
     }
 
     #menulist {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
     }
 }
-With these changes, the elements on your website should adjust and resize properly based on the screen width. The max-width property on #menulist ensures that the menu does not grow too large on larger screens. Additionally, the media query provides specific styles for screen widths below 600 pixels, making the layout more responsive for smaller devices. Feel free to adjust the media query breakpoints and styles based on your specific design requirements.
-
-
-
-
-
