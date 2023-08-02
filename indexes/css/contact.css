@@ -150,5 +150,8 @@ form button {
         width: 90%;
     }
 
+    form {
+        width: 65%;
+    }
 
 }
