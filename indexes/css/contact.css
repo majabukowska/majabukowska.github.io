@@ -188,4 +188,7 @@ form button {
     .box {
         width: 90%;
     }
+    form {
+        width: auto;
+    }
 }
