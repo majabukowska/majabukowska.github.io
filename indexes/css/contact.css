@@ -128,7 +128,7 @@ form input, form textarea {
 }
 
 form button {
-    
+    font-family: "Andale Mono", monospace;
     padding: 15px;
     background: rgb(54, 17, 48);
     color: white;
