@@ -22,7 +22,7 @@
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/contact.css">
-    <script src="js/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="menulist">
@@ -40,9 +40,35 @@
         <a href="https://github.com/majabukowska">
             <button>Github</button>
         </a>
-        <button>668 562 411</button>
-        <button>majabukowska8@gmail.com</button>
+        <button onclick="copyToClipboard('668 562 411')">Phone Number</button>
+        <button onclick="copyToClipboard('majabukowska8@gmail.com')">Email</button>
     </div>
+    
+    <div class="popup" id="popupMessage">Copied!</div>
+    
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(element).select();
+            document.execCommand("copy");
+            $temp.remove();
+            showPopupMessage(event.clientX, event.clientY);
+        }
+    
+        function showPopupMessage(cursorX, cursorY) {
+            var popupMessage = $("#popupMessage");
+            popupMessage.css({
+                top: cursorY - popupMessage.outerHeight() + 30 + "px",
+                left: cursorX - popupMessage.outerWidth() + 85 + "px",
+                display: "block"
+            });
+    
+            setTimeout(function () {
+                popupMessage.fadeOut("fast");
+            }, 2000);
+        }
+    </script>
     <div class="box">
         <div class="heading-container">
             <h2>Get in touch!</h2>
