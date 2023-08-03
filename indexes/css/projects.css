@@ -155,11 +155,22 @@ a:visited {
     }
 
     .gallery {
-        width: 80%;
+        width: 70%;
+
+    }
+    .table {
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 8px 10px;
     }
 
-    table {
-        width: 70%;
-        font-size: 12px;
+    .table button {
+        font-size: 14px;
+        padding: 10px;
+        width: 120px;
     }
 }
