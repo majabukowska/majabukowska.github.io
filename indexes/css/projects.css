@@ -81,10 +81,77 @@ a:visited {
     color: black;
 }
 
+.gallery {
+    padding: 50px;
+    background-color: rgb(54, 17, 48);
+    width: 700px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid black;
+    color:white;
+    align-items: center;
+    justify-content: center; 
+}
 
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.table thead tr{
+    background-color: rgb(51, 50, 50);
+    text-align: left;
+    border: 2px solid black;}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    color: white;
+}
+
+.table tbody tr {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: rgb(65, 25, 58);
+}
+
+.table button {
+    font-family: "Andale Mono", monospace;
+    padding: 15px;
+    background: rgb(54, 17, 48);
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+
+.table button:hover {
+    background: rgb(90, 37, 81);
+}
+
+.table button:active {
+    background: rgb(90, 37, 81);
+}
 
 @media only screen and (max-width: 800px) {
     body {
         margin-top: 30px;
+    }
+
+    .table {
+        width: 90%;
     }
 }

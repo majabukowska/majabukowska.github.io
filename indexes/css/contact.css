@@ -104,6 +104,7 @@ a:visited {
 
 form {
     flex-direction: column;
+    box-shadow: 0 0 20px black;
     align-items: center;
     justify-content: center; 
     background: rgb(51, 50, 50);
