@@ -34,7 +34,7 @@
         </ul>
     </div>
     <div class="gallery">
-        <h2>List of my projects:</h2>
+        <h2><span class="auto-type"></span></h2>
         <table class="table">
             <thead>
                 <tr>
@@ -72,5 +72,12 @@
             </tbody>
         </table>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [`List of my projects:`],
+            typeSpeed: 100
+        })
+    </script>
 </body>
 </html>

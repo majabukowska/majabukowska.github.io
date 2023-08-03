@@ -100,7 +100,6 @@ a:visited {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 15px;
-    min-width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 20px black;
 }
@@ -123,6 +122,10 @@ a:visited {
 
 .table tbody tr:nth-of-type(even) {
     background-color: rgb(65, 25, 58);
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: rgb(54, 17, 48);
 }
 
 .table button {
@@ -151,7 +154,12 @@ a:visited {
         margin-top: 30px;
     }
 
-    .table {
-        width: 90%;
+    .gallery {
+        width: 85%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
     }
 }

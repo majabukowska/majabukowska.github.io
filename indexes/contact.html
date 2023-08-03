@@ -71,7 +71,7 @@
     </script>
     <div class="box">
         <div class="heading-container">
-            <h2>Get in touch!</h2>
+            <h2><span class="auto-type"></span></h2>
         </div>
         <div class="form-container">
             <form action="https://formsubmit.co/3d1d81e20e91b3f0b6e0040c5827ba39" method="POST">
@@ -83,5 +83,12 @@
             </form>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [`Get in touch!`],
+            typeSpeed: 100
+        })
+    </script>
 </body>
 </html>
