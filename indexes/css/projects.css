@@ -121,11 +121,11 @@ a:visited {
 }
 
 .table tbody tr:nth-of-type(even) {
-    background-color: rgb(65, 25, 58);
+    background-color: rgb(77, 32, 68);
 }
 
 .table tbody tr:nth-of-type(odd) {
-    background-color: rgb(54, 17, 48);
+    background-color: rgb(97, 40, 87);
 }
 
 .table button {
@@ -138,15 +138,16 @@ a:visited {
     border: 2px solid black;
     border-radius: 40px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 
 .table button:hover {
-    background: rgb(90, 37, 81);
+    background: rgb(51, 50, 50);
 }
 
 .table button:active {
-    background: rgb(90, 37, 81);
+    background: rgb(51, 50, 50);
 }
 
 @media only screen and (max-width: 800px) {
