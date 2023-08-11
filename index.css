@@ -120,7 +120,18 @@ a:visited {
     color: black;
 }
 
+.cv {
+    margin-top: 30px;
+    width: 225mm;
+    height: 320mm;
+    overflow: hidden;
+}
 
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 @media only screen and (max-width: 800px) {
     body {
@@ -131,5 +142,4 @@ a:visited {
         width: 90%;
         font-size: 12px;
     }
-
 }

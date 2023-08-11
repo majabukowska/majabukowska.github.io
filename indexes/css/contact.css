@@ -86,7 +86,7 @@ a:visited {
 .box {
     background-color: rgb(54, 17, 48);
     width: 820px;
-    height: 600px;
+    height: 700px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ form {
     padding: 40px 60px;
     width: 400px;
     max-width: 100%;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     border: 2px solid black;
 }
@@ -126,6 +126,8 @@ form input, form textarea {
     font-family: "Andale Mono", monospace;
     background: white;
     font-size: 16px;
+    resize: none;
+    width: 100%;
 }
 
 form button {
@@ -146,6 +148,28 @@ form button:hover {
 
 form button:active {
     background: rgb(90, 37, 81);
+}
+
+form label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Andale Mono", monospace;
+    text-align: center;
+}
+
+.terms-label input[type="checkbox"] {
+    margin-left: 80px;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.terms-label a {
+    color: white;
+}
+
+.terms-label a:hover {
+    color: rgb(54, 17, 48);
 }
 
 .buttons {

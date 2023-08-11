@@ -28,19 +28,19 @@
     <div class="menulist">
         <h1>Contact</h1>
         <ul>
-            <li><span><a href="../index.html">Home</a></span></li>
+            <li><span><a href="../index.html">About me</a></span></li>
             <li><span><a href="contact.html">Contact</a></span></li>
             <li><span><a href="projects.html">Projects</a></span></li>
         </ul>
     </div>
     <div class="buttons">
-        <a href="https://www.linkedin.com/in/majabukowska/">
+        <a href="https://www.linkedin.com/in/majabukowska/" target="_blank">
             <button><span>LinkedIn</span></button>
         </a>
-        <a href="https://github.com/majabukowska">
+        <a href="https://github.com/majabukowska" target="_blank">
             <button><span>GitHub</span></button>
         </a>
-        <button onclick="copyToClipboard('+48 668 562 411')"><span>Phone Number</span></button>
+        <button onclick="copyToClipboard('+48 668 562 411')"><span>Phone number</span></button>
         <button onclick="copyToClipboard('majabukowska8@gmail.com')"><span>Email</span></button>
     </div>
     
@@ -77,8 +77,12 @@
             <form action="https://formsubmit.co/3d1d81e20e91b3f0b6e0040c5827ba39" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone Number" required>
-                <textarea name="message" rows="5" placeholder="Message"></textarea>
+                <input type="text" name="phone" placeholder="Phone number" required>
+                <textarea name="message" rows="5" placeholder="Message" maxlength="200"></textarea>
+                <label class="terms-label">
+                    <a href="images/politykaprywatnosci.pdf" target="_blank">Privacy policy</a>
+                    <input type="checkbox" name="consent" required>
+                </label>
                 <button type="submit">Send</button>
             </form>
         </div>
